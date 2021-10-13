@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ahmed"
+        android:alpha="0.9"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="TEAM AHMED"
+            android:textSize="15sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal"
+             android:text="0"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         android:layout_margin="8dp"
+            android:onClick="addthreepoint"
+            android:text="+3"
+            android:textColor="@color/black"
+             android:backgroundTint="?android:attr/colorMultiSelectHighlight"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="addtwopoint"
+            android:padding="4dp"
+            android:text="+2"
+            android:textColor="@color/black"
+
+            android:backgroundTint="?android:attr/colorMultiSelectHighlight"
+            />
+
+        <Button
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="addonepoint"
+            android:padding="4dp"
+            android:text="+1"
+            android:backgroundTint="?android:attr/colorMultiSelectHighlight"
+            android:textColor="@color/black"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:onClick="reset"
+            android:padding="5dp"
+            android:text="reset"
+            android:backgroundTint="?android:attr/colorMultiSelectHighlight"
+            android:textColor="@color/black"
+
+             />
+
+    </LinearLayout>
+
+<View
+    android:layout_width="1.5dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+     />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="TEAM bushy"
+                android:textSize="15sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"   android:layout_marginTop="16dp"
+                />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                 android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="60sp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addthreepointB"
+                android:text="+3"
+                android:backgroundTint="?android:attr/colorMultiSelectHighlight"
+                android:textColor="@color/black"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addtwopointB"
+                android:padding="4dp"
+                android:text="+2"
+                android:backgroundTint="?android:attr/colorMultiSelectHighlight"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="addonepointB"
+                android:padding="4dp"
+                android:text="+1"
+                android:backgroundTint="?android:attr/colorMultiSelectHighlight"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:onClick="resetB"
+                 android:text="reset"
+                android:backgroundTint="?android:attr/colorMultiSelectHighlight"
+                android:textColor="@color/black"
+                />
+
+    </LinearLayout>
+
+</LinearLayout>
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="reset"
+android:layout_alignParentBottom="true"
+     android:layout_centerHorizontal="true"
+     android:onClick="resetAB"
+     android:backgroundTint="?android:attr/colorMultiSelectHighlight"
+     android:textColor="@color/black"
+
+     />
+ </RelativeLayout>
